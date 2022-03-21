@@ -1,5 +1,43 @@
-div img {
-	width: 500px;
+img {
+	width: 60px;
 	height: auto;
+		
+
+}
+
+.top-shape-box {
+	width: 88%;
+	height: 345px;
+	background-color: goldenrod;
+	padding: 20px;
+	border: solid 10px;
+	border-color: black;
+	margin: 0;
+}
+
+ .top-shapes{	
+ 	box-sizing: inherit;
+	padding-left: 70px;
+	padding-top: 150px;
+	float: left;
+
+}
+
+.btm-shape-box {
+	width: 88%;
+	height: 345px;
+	background-color: blueviolet;
+	padding: 20px;
+	border: solid 10px;
+	border-color: black;
+	margin: 0;
+
+}
+
+ .btm-shapes{
+ 	box-sizing: inherit;
+	padding-left:  70px;
+	padding-top: 150px;
+	position: relative;
 }
 
