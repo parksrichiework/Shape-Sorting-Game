@@ -1,41 +1,30 @@
-     
-  
-
-//   function multiplyThree(q,w,e){
-//     return q * w * e
-//   }
-
-// console.log(multiplyThree(3*2*2))
-
- 
-// h1Holder.addEventListener('click', sum);
-//     function sum(){
-//         console.log(num + Number(inputedVal))
-//     };
-
-
-// inputHolder.addEventListener('click', log)
-
-//     function log(){
-//         console.log()
-//     }
-
-
-
- function log(){
- 
-        console.log('Circle Selected')
-    }
-        
-       
     const circle= document.querySelector('#circle')
     const square= document.querySelector('#square')
     const triangle= document.querySelector('#triangle')
+    const shapes= document.querySelectorAll('.btm-shapes')
 
-    circle.addEventListener('click', log)
-    square.addEventListener('click', log)
-    triangle.addEventListener('click', log)
-       
+    Array.from(shapes).forEach(element => element.addEventListener('click', log))
+
+
+    function log(click){
+ 
+       if(click.target.classList.contains('triangle1')){
+        document.querySelector('#empty-triangle').classList.toggle('hidden')
+       }       
+
+       if(click.target.classList.contains('square1')){
+        document.querySelector('#empty-square').classList.toggle('hidden')
+       }
+
+       if(click.target.classList.contains('circle1')){
+        document.querySelector('#empty-circle').classList.toggle('hidden')
+       }
+
+    }
+
+
+
+
 
 
 // Draggable code example 01
