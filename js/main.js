@@ -1,7 +1,7 @@
     const circle= document.querySelector('#circle')
     const square= document.querySelector('#square')
     const triangle= document.querySelector('#triangle')
-    const shapes= document.querySelectorAll('.btm-shapes')
+    const shapes= document.querySelectorAll('.btm')
 
     Array.from(shapes).forEach(element => element.addEventListener('click', log))
 
@@ -10,15 +10,25 @@
  
        if(click.target.classList.contains('triangle1')){
         document.querySelector('#empty-triangle').classList.toggle('hidden')
+        document.querySelector('#empty-square').classList.add('hidden')
+        document.querySelector('#empty-circle').classList.add('hidden')
+        console.log("Triangle")
        }       
 
        if(click.target.classList.contains('square1')){
         document.querySelector('#empty-square').classList.toggle('hidden')
+        document.querySelector('#empty-triangle').classList.add('hidden')
+        document.querySelector('#empty-circle').classList.add('hidden')
+        console.log('Square')
        }
 
        if(click.target.classList.contains('circle1')){
         document.querySelector('#empty-circle').classList.toggle('hidden')
+        document.querySelector('#empty-square').classList.add('hidden')
+        document.querySelector('#empty-triangle').classList.add('hidden')
+        console.log('Circle')
        }
+
 
     }
 

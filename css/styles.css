@@ -37,20 +37,27 @@ img {
 
 
 .btm-shape-box {
-	width: 88%;
-	height: 345px;
-	background-color: blueviolet;
-	padding: 20px;
-	border: solid 10px;
+	width: 100%;
+	height: 22em;
+	background-color: blueviolet;	
+	border: solid 2px;
 	border-color: black;
 	margin: 0;
 
 }
 
- .btm-shapes{
- 	box-sizing: inherit;
-	padding-left:  70px;
-	padding-top: 150px;
-	position: relative;
+.btm-shapes{
+	/*padding-top: 100px;*/
+	width: 100%;
+	height: 20em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }
 
+.btm-shapes img{
+	display: flex;
+	padding: 0px 20px 0px 20px;
+	
+}
