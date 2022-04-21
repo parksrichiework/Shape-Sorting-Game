@@ -5,10 +5,30 @@ img {
 
 }
 
+.chosen{
+	transform: scale(1.8);
+	transition: 0.5s ease-in-out;
+	 -webkit-animation-name: thumb;
+    -webkit-animation-duration: 1000ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes thumb {
+    0% { -webkit-transform: rotate(3deg), transform: translate(0px, -20%); }
+    50% { -webkit-transform: rotate(-3deg); }
+    100% { -webkit-transform: rotate(3deg), transform: translate(0px, 20%); }
+
+}
+
 .hidden{
 	opacity: 10%;
 
+}
 
+.solved{
+	display: none;
 }
 
 .top-shape-box {
