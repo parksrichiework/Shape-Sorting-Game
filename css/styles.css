@@ -1,3 +1,16 @@
+
+/* ----------------- Colors from coolors.co ---------------- */
+:root{
+	--independence: #4E4C67;
+	--rose-dust: #985F6F;
+	--english-lavender: #B4869F;
+	--maximum-blue-purple: #A6B1E1;
+	--languid-lavender: #DCD6F7;
+
+
+}
+
+
 img {
 	width: 60px;
 	height: auto;
@@ -34,11 +47,21 @@ img {
 .top-shape-box {
 	width: 100%;
 	height: 22em;
-	background-color: goldenrod;	
+	background-color: var(--rose-dust);	
 	border: solid 2px;
-	border-color: black;
+	border-color: var(--independence);
 	margin: 0;
 
+}
+
+.top-shapes:hover{
+	transform: scale(1.8);
+	transition: 0.5s ease-in-out;
+	 -webkit-animation-name: thumb;
+    -webkit-animation-duration: 1000ms;
+    /* -webkit-transform-origin:50% 50%; */
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
 }
 
 .empty-shapes{
@@ -61,9 +84,9 @@ img {
 .btm-shape-box {
 	width: 100%;
 	height: 22em;
-	background-color: blueviolet;	
+	background-color: var(--english-lavender);	
 	border: solid 2px;
-	border-color: black;
+	border-color: var(--independence);
 	margin: 0;
 
 }
@@ -78,8 +101,27 @@ img {
 	
 }
 
+.btm:hover{
+	transform: scale(1.8);
+	transition: 0.5s ease-in-out;
+	 -webkit-animation-name: thumb;
+    -webkit-animation-duration: 1000ms;
+    /* -webkit-transform-origin:50% 50%; */
+    -webkit-animation-iteration-count: infinite; /* The magic keyword for infinite*/
+    -webkit-animation-timing-function: linear;
+}
+
+
 .btm-shapes img{
 	display: flex;
 	padding: 0px 20px 0px 20px;
+	
+}
+
+.emptyTriangle{
+		width: 0;
+		height: 0;
+		border: solid 30px;
+		border-color: transparent transparent black transparent;
 	
 }
