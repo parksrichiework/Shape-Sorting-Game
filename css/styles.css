@@ -118,10 +118,15 @@ img {
 	
 }
 
-.emptyTriangle{
+.empty-triangle{
+	
+}
+
+/* --------------HTML DRAWN SHAPES------------- */
+/* .emptyTriangle{
 		width: 0;
 		height: 0;
 		border: solid 30px;
 		border-color: transparent transparent black transparent;
 	
-}
+} */
