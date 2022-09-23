@@ -55,6 +55,7 @@
       if (click.target.classList.contains('emptyTriangle') && document.querySelector('#triangle').classList.contains('chosen')){
          alert('Correct!');
          document.querySelector('#triangle').classList.add('hidden');
+         document.querySelector('#triangle').classList.toggle('chosen');
          document.querySelector('#empty-triangle').classList.toggle('solved');
       } else if (click.target.classList.contains('emptyTriangle') && document.querySelector('#square').classList.contains('chosen')){
          alert('Oops! Try Again!')
@@ -65,6 +66,7 @@
       if (click.target.classList.contains('emptySquare') && document.querySelector('#square').classList.contains('chosen')){
          alert('Correct!');
          document.querySelector('#square').classList.add('hidden');
+         document.querySelector('#square').classList.toggle('chosen');
          document.querySelector('#empty-square').classList.toggle('solved');
       } else if (click.target.classList.contains('emptySquare') && document.querySelector('#triangle').classList.contains('chosen')){
          alert('Oops! Try Again!')
@@ -75,6 +77,7 @@
       if (click.target.classList.contains('emptyCircle') && document.querySelector('#circle').classList.contains('chosen')){
          alert('Correct!');
          document.querySelector('#circle').classList.add('hidden');
+         document.querySelector('#circle').classList.toggle('chosen');
          document.querySelector('#empty-circle').classList.toggle('solved');
          
 
