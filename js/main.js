@@ -42,9 +42,9 @@
 
     }
 
-    const emptyCircle= document.querySelector('#emptyCircle')
-    const emptySquare= document.querySelector('#emptySquare')
-    const emptyTriangle= document.querySelector('#emptyTriangle')
+    const emptyCircle= document.querySelector('#empty-circle')
+    const emptySquare= document.querySelector('#empty-square')
+    const emptyTriangle= document.querySelector('#empty-triangle')
     const emptyShapes= document.querySelectorAll('.top-shapes')
 
     Array.from(emptyShapes).forEach(element => element.addEventListener('click', match))
@@ -54,6 +54,7 @@
 
       if (click.target.classList.contains('emptyTriangle') && document.querySelector('#triangle').classList.contains('chosen')){
          alert('Correct!');
+         console.log('Triangle solved');
          document.querySelector('#triangle').classList.add('hidden');
          document.querySelector('#triangle').classList.toggle('chosen');
          document.querySelector('#empty-triangle').classList.toggle('solved');
@@ -65,6 +66,7 @@
 
       if (click.target.classList.contains('emptySquare') && document.querySelector('#square').classList.contains('chosen')){
          alert('Correct!');
+         console.log('Square solved');
          document.querySelector('#square').classList.add('hidden');
          document.querySelector('#square').classList.toggle('chosen');
          document.querySelector('#empty-square').classList.toggle('solved');
@@ -76,6 +78,7 @@
 
       if (click.target.classList.contains('emptyCircle') && document.querySelector('#circle').classList.contains('chosen')){
          alert('Correct!');
+         console.log('Circle solved');
          document.querySelector('#circle').classList.add('hidden');
          document.querySelector('#circle').classList.toggle('chosen');
          document.querySelector('#empty-circle').classList.toggle('solved');
@@ -89,15 +92,17 @@
     }
 
 // ---------------------------- "YOU WIN" CELEBRATION FUNCTION ----------------------------
-// let winner = youWin();
 
-// function youWin(emptyShapes) {
-//    if (emptyShapes.classList.contains('solved')){
-//       alert("you Win!");
-      
-//    }
-//    return winner;
-// };
+
+let winner = youWin();
+
+function youWin(){
+      console.log('hey girl');
+
+}
+
+
+
 
 
 
