@@ -59,8 +59,8 @@ img {
 	background-color: var(--palatinate-purple);
 	color: var(--fulvous);
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 25%;
+	left: 40%;
 	z-index: 10;
 	padding: 20px 30px;
 	width: fit-content;
@@ -74,8 +74,9 @@ img {
 	background-color: var(--fulvous);
 	color: var(--palatinate-purple);
 	border: solid 2px var(--palatinate-purple);
-	border-radius: 10px;
-	padding: 5px 10px;
+	border-radius: 20px;
+	width: 100%;
+	padding: 10px 10px;
 }
 
 .close-directions:hover{
@@ -230,7 +231,7 @@ img {
 		top: 25%;
 		left: 7%;
 		width: 20em;
-		padding: 10px;
+		padding: 20px 10px;
 	}
 
 	.game-box{
