@@ -26,7 +26,13 @@
 
 body{
 	background-color: var(--persian-green);	
-	font-family: 'Bakbak One', cursive;;
+	font-family: 'Bakbak One', cursive;
+	margin:0;
+	padding: 8px;
+}
+
+main{
+	
 }
 
 h3 {
@@ -46,6 +52,46 @@ img {
 	height: auto;
 		
 
+}
+
+.directions{
+	display: inline-block;
+	background-color: var(--palatinate-purple);
+	color: var(--fulvous);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	padding: 20px 30px;
+	width: fit-content;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	border-radius: 20px;
+	
+}
+
+.close-directions{
+	background-color: var(--fulvous);
+	color: var(--palatinate-purple);
+	border: solid 2px var(--palatinate-purple);
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+.close-directions:hover{
+	background-color: var(--palatinate-purple);
+	color: var(--fulvous);
+	border: solid 2px var(--fulvous);
+}
+
+.closed{
+	display: none;
+	transition: 0.2s ease-in-out;
+}
+
+.game-box{
+	width: 100%;
+	margin: 0;
 }
 
 .chosen{
@@ -72,6 +118,7 @@ img {
 
 .solved{
 	opacity: 0%;
+	transition: 0.2s ease-in-out;
 }
 
 .top-shape-box {
@@ -80,7 +127,7 @@ img {
 	background-color: var(--middle-red);	
 	border: solid 2px;
 	border-color: var(--jet);
-	margin: 0;
+	margin: 0px;
 
 }
 
@@ -171,3 +218,20 @@ img {
 		
 }
 
+@media screen and (max-width: 640px) {
+	
+	body{
+		/* width: 100%; */
+		/* height: auto; */
+	} 
+
+	.directions{		
+		top: 25%;
+		left: 7%;
+		
+	}
+
+	.game-box{
+		text-align: center;
+	}
+}

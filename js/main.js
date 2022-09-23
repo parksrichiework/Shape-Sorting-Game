@@ -85,14 +85,28 @@
       }
     }
 
-
+// ---------------------------- "YOU WIN" CELEBRATION FUNCTION ----------------------------
 // function youWin() {
 //    if (emptyShapes.classList.contains('solved')){
 //       alert("you Win!");
 //    }
 // };
 
-alert('Let\'s get sorting!');
+// ----------------------------------WELCOME MESSAGE---------------------------------
+// alert('Let\'s get sorting!');
+
+
+let closeDirections = document.querySelector('#close-button');
+let directions = document.querySelector('#game-directions');
+
+closeDirections.addEventListener('click', closeBox);
+
+function closeBox(){
+         directions.classList.add('closed');
+         console.log('closed the directions');
+      
+   }
+
 
 
 // Draggable code example 01
