@@ -93,7 +93,7 @@
 // };
 
 // ----------------------------------WELCOME MESSAGE---------------------------------
-// alert('Let\'s get sorting!');
+alert('Let\'s get sorting!');
 
 
 let closeDirections = document.querySelector('#close-button');
