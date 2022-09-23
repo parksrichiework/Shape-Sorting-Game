@@ -86,11 +86,17 @@
     }
 
 // ---------------------------- "YOU WIN" CELEBRATION FUNCTION ----------------------------
-// function youWin() {
+// let winner = youWin();
+
+// function youWin(emptyShapes) {
 //    if (emptyShapes.classList.contains('solved')){
 //       alert("you Win!");
+      
 //    }
+//    return winner;
 // };
+
+
 
 // ----------------------------------WELCOME MESSAGE---------------------------------
 alert('Let\'s get sorting!');
@@ -106,6 +112,8 @@ function closeBox(){
          console.log('closed the directions');
       
    }
+
+ 
 
 
 

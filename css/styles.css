@@ -18,6 +18,7 @@
 	--rebecca-purple: #662C91 ;
 	--persian-green: #17A398 ;
 	--jet: #33312E;
+	--jet-shadow: rgba(51, 49, 46, 0.6);
 
 
 
@@ -67,7 +68,7 @@ img {
 	transition: 0.2s ease-in-out;
 	text-align: center;
 	border-radius: 20px;
-	
+	box-shadow: 0px 7px 7px var(--jet-shadow);
 }
 
 .close-directions{
