@@ -229,11 +229,13 @@ img {
 	.directions{		
 		top: 25%;
 		left: 7%;
-		
+		width: 20em;
+		padding: 10px;
 	}
 
 	.game-box{
 		text-align: center;
+		
 	}
 
 
