@@ -28,11 +28,11 @@ body{
 	background-color: var(--persian-green);	
 	font-family: 'Bakbak One', cursive;
 	margin:0;
-	padding: 8px;
+	padding: 0px;
 }
 
 main{
-	
+	padding: 8px;
 }
 
 h3 {
@@ -92,6 +92,7 @@ img {
 .game-box{
 	width: 100%;
 	margin: 0;
+	
 }
 
 .chosen{
@@ -122,7 +123,7 @@ img {
 }
 
 .top-shape-box {
-	width: 100%;
+	width: inherit;
 	height: 22em;
 	background-color: var(--middle-red);	
 	border: solid 2px;
@@ -159,7 +160,7 @@ img {
 
 
 .btm-shape-box {
-	width: 100%;
+	width: inherit;
 	height: 22em;
 	background-color: var(--burnt-sienna);	
 	border: solid 2px;
@@ -234,4 +235,6 @@ img {
 	.game-box{
 		text-align: center;
 	}
+
+
 }
