@@ -127,7 +127,7 @@ img {
 	width: inherit;
 	height: 22em;
 	background-color: var(--middle-red);	
-	border: solid 2px;
+	/* border: solid 2px; */
 	border-color: var(--jet);
 	margin: 0px;
 
@@ -164,7 +164,7 @@ img {
 	width: inherit;
 	height: 22em;
 	background-color: var(--burnt-sienna);	
-	border: solid 2px;
+	/* border: solid 2px; */
 	border-color: var(--jet);
 	margin: 0;
 
