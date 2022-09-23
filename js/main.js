@@ -104,11 +104,13 @@ alert('Let\'s get sorting!');
 
 let closeDirections = document.querySelector('#close-button');
 let directions = document.querySelector('#game-directions');
+let directionsModal = document.querySelector('#game-directions-modal')
 
 closeDirections.addEventListener('click', closeBox);
 
 function closeBox(){
          directions.classList.add('closed');
+         directionsModal.classList.add('closed')
          console.log('closed the directions');
       
    }
